@@ -20,13 +20,33 @@
 }
 @media (max-width: 1200px) and (min-width: 991px) {
  
+    .join-us-slider .slick-active:not(.slick-center) {
+       
+    margin-top: 157.1px;
 
+    }
+
+    .join-us-slider .slick-active:not(.slick-center):before {
+      
+        background: linear-gradient(0,#f8f8f8 79.5%, transparent 23%);
+     
+    }
  
 }
 
 
-@media (max-width: 1440px) and (min-width: 1200px) {
 
+@media (max-width: 1400px) and (min-width: 1200px) {
 
+    .join-us-slider .slick-active:not(.slick-center) {
+     
+        margin-top: 158.1px;
+    }
+
+    .join-us-slider .slick-active:not(.slick-center):before {
+      
+        background: linear-gradient(0,#f8f8f8 78.5%, transparent 23%);
+     
+    }
 
 }
