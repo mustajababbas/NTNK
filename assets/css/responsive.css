@@ -5,11 +5,107 @@
 
 @media (max-width: 767px) {
 
+ 
+
+    .middle-head,
+    .nav-right{
+
+        display: none;
+
+    }
+
+.navbar-brand img{
+
+    width: 100px;
+
 }
 
-@media (min-width:768px){
+.navbar>.custom-container{
 
+    width: 100%;
+
+}
+
+.header-banner p {
   
+    font-size: 13px;
+}
+
+.header-banner a {
+    font-size: 10px;
+}
+
+.slider-meta{
+    bottom: 5rem;
+    left: 0;
+}
+
+.main-slider .slick-prev,
+.main-slider .slick-next,
+.products-carousel-section .prev, 
+.products-carousel-section .next{
+    
+    display: none !important;
+
+}
+
+.section-title h2{
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.off-code {
+    padding: 4rem 30px;
+}
+.off-code h2{
+
+    font-size: 30px;
+    line-height: 35px;
+
+}
+
+.off-code p,
+.off-code p .gredient{
+font-size: 14px;
+line-height: 21px;
+}
+
+.products-carousel-section .title-left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-left h3{
+font-size: 22px;
+line-height: 33px;
+}
+
+.product-bx .tags,
+.product-bx .fav-icon,
+.product-colors{
+
+    display: none !important;
+
+}
+
+.product-bx .col-lg-4{
+
+    order: 3;
+}
+}
+
+/* max 767px END */
+
+@media (max-width:991px){
+
+    .custom-container{
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 
 } 
 @media (max-width: 991px) and (min-width: 768px) {
