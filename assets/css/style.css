@@ -424,13 +424,13 @@ right:15px;
 
 .teaching-slider .slick-next{
 
-  right:-27%;
+  right:-20%;
 
 }
 
 .teaching-slider .slick-prev{
 
-  left:-27%;
+  left:-20%;
 
 }
 
@@ -762,6 +762,7 @@ color: #767676;
   line-height: 20px;
   color: var(--black);
   font-family: var(--montserrat);
+  letter-spacing: -0.02em !important;
 }
 
 .title-left p {
@@ -1387,6 +1388,7 @@ margin-bottom: 10px;
 
 footer {
   position: relative;
+  padding: 20px 0;
 }
 
 .chat-button {
@@ -1472,6 +1474,7 @@ footer {
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: flex-end;
 }
 .footer-social li {
   margin-left: 20px;
@@ -2082,7 +2085,7 @@ display: block;
 
 .expert-slider{
 
-  margin: 0 -10px;
+  margin: 0 -12px;
 
 }
 
@@ -2091,7 +2094,7 @@ display: block;
 
   background: #FCFCFC;
 border-radius: 40px;
-margin: 0 10px;
+margin: 0 12px;
 padding: 20px;
 
 }
@@ -2117,7 +2120,7 @@ line-height: 21px;
 
 .expert-slide p {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 17px;
   color: var(--darkgrey);
   margin: 10px 0 5px;
@@ -2125,7 +2128,7 @@ line-height: 21px;
 
 .expert-slide h5 {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 17px;
   color: var(--button1);
   text-align: center;
@@ -2606,7 +2609,19 @@ color: var(--primary);
 .testimonials-slide {
   background-color: #FCFCFC;
   border-radius: 34px;
-  padding: 46px;
+  padding: 40px;
+}
+
+.testimonials-slider-alt{
+
+  padding: 0 50px;
+
+}
+
+.testimonials-slider .testimonial-user img{
+
+ width: 60px; 
+
 }
 
 .testimonials-slide.color2{
@@ -2625,15 +2640,15 @@ color: var(--primary);
 
 .testimonials-slide.color2 .testimonials-box {
   border-radius: 26px;
-  padding: 34px;
+  padding: 30px;
   background-color: var(--white);
 }
 
 .single-testimonial {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--black);
 }
 
@@ -2645,8 +2660,8 @@ color: var(--primary);
 
 .testimonial-user h4 {
   font-weight: 700;
-  font-size: 19px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 15px;
   color: var(--black);
 }
 
@@ -2662,13 +2677,14 @@ color: var(--primary);
 .testimonials-slider2,
 .product-slider,
 .join-us-slider {
-  margin: 0 -10px;
+  margin: 0 -13px;
+
 }
 
 .testimonials-slide,
 .testimonials-slide2,
 .join-us-box {
-  margin: 0 10px;
+  margin: 0 13px;
 }
 
 .product-slides{
@@ -2679,8 +2695,14 @@ color: var(--primary);
 
 .testimonials-slider .slick-dots {
   bottom: -50px;
-  left: -4rem;
+  left: -5%;
 }
+
+.testimonials-slider-alt .slick-dots {
+  bottom: -50px;
+  left: 0;
+}
+
 
 .testimonials-slider .slick-list,
 .product-slider .slick-list,
@@ -2772,7 +2794,7 @@ line-height: 18px;
 }
 
 .legal-sidebar {
-  padding: 1rem 3rem 0 5rem;
+  padding: 1rem 3rem 0;
 }
 
 .side-menu-col {
@@ -2785,10 +2807,10 @@ line-height: 18px;
 
 .side-menu-col h4 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
   color: var(--black);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-family: var(--montserrat);
 }
 
@@ -2799,13 +2821,13 @@ line-height: 18px;
 }
 
 .side-menu-col li {
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .side-menu-col ul a {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 14px;
   color: var(--darkgrey);
 }
 
@@ -2831,6 +2853,11 @@ line-height: 18px;
   padding: 3rem 8rem 10rem 3rem;
 }
 
+.legal-body .title-left h3 {
+
+  line-height: 8px;
+}
+
 .legal-inner {
   padding-top: 3rem;
   border-top: 2px solid var(--white);
@@ -2841,6 +2868,7 @@ line-height: 18px;
   font-size: 16px;
   line-height: 24px;
   color: var(--black);
+  letter-spacing: 0.02em !important;
 }
 
 .legal-inner .legal-div {
@@ -4635,8 +4663,8 @@ justify-content: space-between !important;
 .sidebar-accordian .clear-filter a{
 
 
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 24px;
   color: var(--darkgrey);
   text-decoration: underline !important;
@@ -5097,13 +5125,17 @@ display: block;
 
 .apply-as-slider .slick-list.draggable{
 
-  padding: 30px 90px !important;
+  margin: 30px 70px !important;
+  padding: 40px 0 !important;
 
 }
 
 .apply-as-slider .apply-as-slides{
 
 position: relative;
+width: 400px;
+
+
 
 }
 
@@ -5122,6 +5154,7 @@ position: relative;
 .apply-as-slider .prevdiv{
 
   transform: rotate(-14.47deg);
+  
 
 
 }
@@ -5155,6 +5188,18 @@ top: 0;
 .apply-as-slider .slick-dots{
 
   bottom: 0;
+
+}
+
+.apply-as-slider .slick-prev{
+
+  left: -6%;
+
+}
+
+.apply-as-slider .slick-next{
+
+  right: -6%;
 
 }
 

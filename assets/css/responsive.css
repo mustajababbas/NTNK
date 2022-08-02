@@ -5,6 +5,10 @@
 
 @media (max-width: 767px) {
 
+    .custom-btn {
+        font-size: 15px;
+        font-weight: 300;
+    }    
  
 
     .middle-head,
@@ -96,6 +100,25 @@ line-height: 33px;
 
     order: 3;
 }
+
+.our-promise {
+    padding: 3rem 0;
+}
+
+.our-promise p:last-child{
+
+    display: none;
+
+}
+
+.our-promise h3{
+
+font-weight: 500;
+font-size: 24px;
+line-height: 26px;
+
+}
+
 }
 
 /* max 767px END */
