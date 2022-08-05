@@ -3,10 +3,14 @@ const menuInner = menuNavbar.querySelector('.menu-inner');
 const menuArrow = menuNavbar.querySelector('.menu-arrow');
 const menuBurger = document.querySelector('.burger');
 const closeNav = document.querySelector('.close-nav');
-const overlay = document.querySelector('.overlay');
+const overlay = document.querySelector('.headoverlay');
 const search = document.querySelector('.search-bar');
 const searchIcon = document.querySelector('.search-icon');
-const closeSearchbar = document.querySelector('.close-search');
+const closeSearchbar = document.querySelector('#closeSearch');
+const eduFilter = document.querySelector('.edu-filter');
+const eduOpen = document.querySelector('#openEdu');
+const eduClose = document.querySelector('#closeEdu');
+
 
 
 
@@ -86,3 +90,20 @@ const closeSearch = () => {
 
 searchIcon.addEventListener('click', openSearch);
 closeSearchbar.addEventListener('click', closeSearch);
+
+
+
+const openeduFilter= () => {
+	eduFilter.classList.toggle('active');
+	document.querySelector('body').style.overflow="hidden"
+
+};
+
+const closeeduFilter = () => {
+	eduFilter.classList.remove('active');
+	document.querySelector('body').style.overflow="auto"
+
+};
+
+eduOpen.addEventListener('click', openeduFilter);
+eduClose.addEventListener('click', closeeduFilter);

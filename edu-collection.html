@@ -71,8 +71,8 @@
 
         <div class="custom-container p-0">
 
-            <div class="row g-0 align-items-center">
-                <div class="col-lg-5 px-5">
+            <div class="row g-0 align-items-center reverse-flex-mb">
+                <div class="col-xl-5 col-lg-12 px-5">
 
                     <div class="section-title">
                         <h4 class="gredient">Courses</h4>
@@ -86,7 +86,7 @@
 
                 </div>
 
-                <div class="col-lg-7">
+                <div class="col-xl-7 col-lg-12">
 
                     <div class="home-video-section my-0">
                         <a href="#">                
@@ -103,13 +103,121 @@
         </div>
 
   
-        <div class="container">
+        <div class="container border-tp-mb">
 
             <div class="section-title">
                 <h2 class="text-none">Explore by Category</h2>
                 <p class="grey">Select areas of growth to see your personalised program recommendations</p>
+            </div>
+
+            <div class="filter-edu">
+
+                <span id="openEdu">
+                    <p>Filter</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0620/7664/9710/files/setting-4.png?v=1659605103">
+                </span>
 
             </div>
+
+            <div class="edu-filter">
+
+                <div class="close-bar close-absolute" id="closeEdu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="edu-filter-inner">
+                    <h4>Search Filter</h4>
+
+                    <form>
+                        <div class="filter-fields">
+                            <h5>Sort By</h5>
+
+                            <ul>
+
+                                <li>
+                                    <input type="radio" id="featured" name="sort"> 
+                                    <label for="featured">Featured</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="newest" name="sort"> 
+                                    <label for="newest">Newest</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="hightolow" name="sort"> 
+                                    <label for="hightolow">Price: High-Low</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="lowtohigh" name="sort"> 
+                                    <label for="lowtohigh">Price: Low-High</label>
+                                </li>
+
+                                <li class="checked">
+
+                                    <input type="checkbox" id="limitedtime" name="sort" checked=""> 
+                                    <label for="limitedtime">Limited Edition Only</label>
+
+                                </li>
+
+                            </ul>
+
+                          
+
+                                
+                                
+                                
+
+                           
+
+                        </div>
+
+                        <div class="filter-fields">
+                            <h5>Art</h5>
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" id="live" name="art"> 
+                                    <label for="live">Live</label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="offline" name="art"> 
+                                    <label for="offline">Offline</label>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <div class="filter-fields">
+                            <h5>Language</h5>
+
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" id="english" name="language"> 
+                                    <label for="english">Enlish</label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="german" name="language"> 
+                                    <label for="german">German</label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
 
             <div class="categories-tags mb-3">
 
@@ -338,7 +446,7 @@
 
             </div>
 
-            <div class="view-all-partners mb-5 pb-5">
+            <div class="view-all-partners mb-lg-5 pb-5">
                 <a href="">Join our Network</a>
             </div>
 
@@ -454,12 +562,52 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 
     <script>
+
+
         $('.edu-categories').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots:false,
-        arrows: true
+        arrows: true,
+        responsive: [
+
+            {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false
+            }
+            },
+                {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false
+            }
+            },
+            {
+            breakpoint: 991,
+            settings: {
+                infinite: false,
+                slidesToShow: 2.5,
+                slidesToScroll: 1,
+                arrows: false
+
+            }
+            },
+            {
+            breakpoint: 767,
+            settings: {
+                infinite: false,
+                slidesToShow: 1.1,
+                slidesToScroll: 1,
+                arrows: false
+            }
+            }
+        ]
         });
 
     
@@ -470,7 +618,41 @@
         slidesToShow:6,
         slidesToScroll: 1,
         dots:false,
-        arrows: false
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+
+            }
+            },
+            {
+            breakpoint: 767,
+            settings: {
+                infinite: false,
+                slidesToShow: 1.7,
+                slidesToScroll: 1,
+            }
+            }
+           
+            
+        ]
         });
 
 

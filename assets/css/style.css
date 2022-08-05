@@ -511,7 +511,7 @@ width: 18px;
 }
 
 
-.overlay {
+.headoverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -746,12 +746,23 @@ color: var(--primary);
   right: -70px;
 }
 
-.edu-categories .slick-prev,
+
 .testimonials-slider .slick-prev,
 .project-slider .slick-prev,
 .art-slider .slick-prev,
 .product-detail-slider .slick-prev {
   left: -70px;
+}
+
+.edu-categories .slick-next{
+
+  right: -8%;
+
+}
+.edu-categories .slick-prev{
+
+  left: -8%;
+
 }
 
 .other-class-slider .slick-next {
@@ -2406,6 +2417,7 @@ justify-content: flex-end;
   align-items: center;
   justify-content: center;
 }
+
 
 .edu-categories {
   padding: 3rem 0;
@@ -4683,15 +4695,15 @@ display: none;
 
 }
 
-.select-apperal .checked{
+.checked{
 
   background: linear-gradient(270.55deg, var(--button1) 0.48%, var(--button2) 99.59%);
-  padding: 1rem;
+  padding: 1rem !important;
 
 }
-.select-apperal .checked label{
+.checked label{
 
-color: var(--white);
+color: var(--white) !important;
 font-family: var(--montserrat);
 }
 
@@ -6084,3 +6096,97 @@ line-height: 21px;
 color: var(--primary);
 }
 
+.filter-edu{
+
+  display: none;
+  margin-bottom: 3rem;
+
+}
+
+.filter-edu span{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.7px solid #ACACAC;
+  border-radius: 60px;
+  padding: 10px 30px;
+  gap: 0 10px;
+
+}
+
+.filter-edu span p{
+
+  margin-bottom: 0;
+  font-weight: 400;
+font-size: 19px;
+line-height: 28px;
+
+}
+
+.filter-fields:not(:first-child){
+
+  padding: 2rem 0;
+
+}
+
+.filter-fields{
+
+  border-bottom: 1px solid #EBEBEB;
+
+}
+
+.filter-fields h5{
+font-weight: 600;
+font-size: 16px;
+line-height: 21px;
+color: var(--primary);
+margin-bottom: 1.5rem;
+}
+
+.filter-fields ul{
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.filter-fields ul li{
+padding-bottom: 6px;
+display: inline-flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+
+
+
+.filter-fields ul input{
+accent-color: var(--black);
+width: 15px;
+height: 15px;
+}
+
+.filter-fields ul label{
+
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+}
+
+
+.edu-filter-inner h4{
+  font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: var(--black);
+}
+
+.filter-fields .checked{
+  padding:.5rem 1.5rem !important;
+  margin: 15px 0 2rem;
+}
