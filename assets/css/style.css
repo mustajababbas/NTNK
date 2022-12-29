@@ -640,6 +640,10 @@ color: var(--primary);
   color: var(--darkgrey) !important;
 
 }
+.middle-head-right .swym-wishlist{
+    min-width: 22px;
+    height: 21px;
+}
 
 .header-banner {
   padding: 1rem 0;
@@ -2001,6 +2005,10 @@ color: var(--primary-dark);
       margin-bottom: 20px;
 }
 
+.product-bx .product-img:not(.single-product .product-img) {
+  height: 400px;
+}
+
 .product-sec-img{
 
   display: none !important;
@@ -2058,6 +2066,27 @@ color: var(--primary-dark);
   right: 25px;
   top: 25px;
   font-size: 25px;
+}
+
+.fav-icon .swym-icon  { 
+  z-index: 100;
+  cursor: pointer; 
+  background-image: url("https://cdn.shopify.com/s/files/1/0650/6430/4863/files/heart.png?v=1655476538"); 
+    height: 20px;
+    width: 22px;
+    background-repeat: no-repeat;
+} 
+
+.fav-icon .swym-icon.swym-added { 
+  background-image: url("https://cdn.shopify.com/s/files/1/0620/7664/9710/files/heart-fill.png?v=1660204418"); 
+}
+
+
+
+.product-bx .fav-icon button{
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .product-bx .fav-icon.upper {
@@ -2150,9 +2179,35 @@ color: var(--primary-dark);
   font-size: 16px;
   line-height: 24px;
   color: #757575;
-  display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+           line-clamp: 1; 
+   -webkit-box-orient: vertical;
 
 }
+
+.product-listing-details span p{
+    font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+  display: block;
+  
+}
+
+.product-listing-details span h1,
+.product-listing-details span h2,
+.product-listing-details span h3,
+.product-listing-details span h4,
+.product-listing-details span h5,
+.product-listing-details span h6,
+.product-listing-details span p:not(.product-listing-details span p:first-of-type){
+  display:none;
+}
+
+
 
 .sction {
   padding: 50px 0;
@@ -2426,7 +2481,7 @@ justify-content: flex-end;
 
 .edu-slides {
   height: 500px;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   margin: 0 10px;
 }
@@ -2513,6 +2568,7 @@ justify-content: flex-end;
 
 .edu-slides .categories-meta p img {
   margin-right: 10px;
+  display: inline;
 }
 
 .essential-slides .categories-meta{
@@ -2830,6 +2886,12 @@ color: #979797;
   padding: 1rem 0 2rem;
 }
 
+.apply-btn-grp{
+
+  flex-direction: column;
+
+}
+
 .apply-footer {
   background: linear-gradient(
     105.79deg,
@@ -2879,6 +2941,7 @@ color: var(--primary);
 
 .instructor-img-sm {
   margin-right: 20px;
+  display: flex;
 }
 
 .instructor-img-sm img{
@@ -2897,6 +2960,14 @@ color: var(--primary);
   color: var(--black);
 }
 
+.course-description{
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
 .course-instructor p a {
   font-weight: 600;
   font-size: 12px;
@@ -2910,11 +2981,21 @@ color: var(--primary);
   text-decoration: underline !important;
 }
 
+.c-benefits-slider{
+
+  margin: 0 -10px;
+
+}
+
+.c-benefits-slides{
+
+  margin: 0 10px;
+
+}
 
 .course-benefits {
   list-style: none;
   padding-left: 0;
-  column-count: 2;
   margin-bottom: 4rem;
   column-gap: 1rem;
 }
@@ -2930,6 +3011,38 @@ color: var(--primary);
   font-size: 14px;
   line-height: 20px;
   color: var(--primary);
+}
+
+.browse-plan{
+
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+
+}
+
+.browse-plan span{
+
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+
+
+}
+
+.browse-plan span img{
+
+  margin-bottom: 0.5rem;
+
+}
+
+.browse-plan span h6{
+
+  font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+color: var(--black);
+
 }
 
 .course-faq .accordian {
@@ -3584,14 +3697,14 @@ font-size: 18px;
 line-height: 27px;
 text-decoration: underline !important;
 color: var(--primary);
-display: inline;
+display: inline-block;
 }
 
 .gredient.view-all:after{
 
 content: "";
 background-color: var(--button1);
-width: 10%;
+width: 100%;
 height: 1px;
 display: block;
 margin:-1px auto 0;
@@ -4592,7 +4705,8 @@ color: var(--primary);
   margin: 2rem 0;
 }
 
-.products-price h5{
+.products-price h5,
+.price-item{
 
 font-weight: 700;
 font-size: 16px;
@@ -4600,6 +4714,10 @@ line-height: 20px;
 color: var(--primary);
 font-family: var(--montserrat);
 
+}
+
+.price-item--sale {
+    color: var(--color-sale-text) !important;
 }
 
 .products-price p{
@@ -5142,6 +5260,7 @@ justify-content: space-between !important;
 .sort-by select{
 
 border: none;
+  width: 200px;
 outline: none;
 padding: 5px;
 font-weight: 300;
@@ -6189,4 +6308,23 @@ color: var(--black);
 .filter-fields .checked{
   padding:.5rem 1.5rem !important;
   margin: 15px 0 2rem;
+}
+
+.jdgm-preview-badge .jdgm-star.jdgm-star {
+    font-size: 14px;
+}
+
+.jdgm-prev-badge__text{
+
+      font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--primary);
+  
+}
+
+.swym-fave-count{
+
+  display:none !important;
+  
 }
